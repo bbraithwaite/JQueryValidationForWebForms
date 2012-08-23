@@ -1,0 +1,1 @@
+A plug-in that takes the pain out of using JQuery validation with ASP.Net WebForms. Favours convention over configuration and tackles the problem of working with a single Form element when working with logical validation groups.
