@@ -1,6 +1,6 @@
 ﻿/**
 * jquery.validation.net.webforms.js v1.0.0
-* http://github.com/bbraithwaite/jquery-validate-webforms
+* https://github.com/bbraithwaite/JQueryValidationForWebForms
 * ===================================================
 *
 * Copyright 2012 Bradley Braithwaite.
