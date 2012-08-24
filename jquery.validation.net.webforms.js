@@ -10,8 +10,6 @@
 *   http://www.gnu.org/licenses/gpl.html
 */
 
-var jQuery = jQuery || { };
-
 (function ($) {
 
     $.extend($.fn, {
