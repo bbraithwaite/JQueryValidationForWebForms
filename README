@@ -1,6 +1,8 @@
 A plug-in that takes the pain out of using JQuery validation with ASP.Net WebForms. Tackles the problem of being restricted to a single Form element when working with multiple validation groups.
 
 
+For more information please see: http://www.ideplorable.com/2012/08/jquery-validation-groups-for-webforms.html
+
 **EXAMPLE**
 
 Use the following to bind the event:
