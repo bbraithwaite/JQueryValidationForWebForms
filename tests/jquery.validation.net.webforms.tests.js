@@ -65,11 +65,8 @@
     });
 
     test("clicking the enter key with no an invalid email displays login form validation error", function () {
-
         $("#uxUserName").val("user@email");
-
         triggerEnterKey("#uxUserName");
-
         equal($("#uxUserName").next().text(), "Please enter a valid email address.");
         equal($("#uxRegister").next().text(), "", "Register form group should not be validated.");
     });
