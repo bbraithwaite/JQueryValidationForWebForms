@@ -54,23 +54,20 @@
             return $(submitControl).closest('.form');
         },
         validateAndSubmit: function (event) {
-            // Ascend from the button that triggered this click event 
-            // until we find a container element flagged with 
-            // .validationGroup and store a reference to that element.
+
             var group = $(this).getValidationContainer(event.currentTarget),
                 isValid = true;
 
-            // Descending from that .form element, find any input
-            // elements within it, iterate over them, and run validation on 
-            // each of them.
             group.find(':input').each(function (i, item) {
                 if (!$(item).valid()) {
+
+                    if ($("form").validate().settings.focusInvalid)
+                        $(item).focus();
+
                     isValid = false;
                 }
             });
 
-            // If any fields failed validation, prevent the button's click 
-            // event from triggering form submission.
             if (!isValid) {
                 event.preventDefault();
             }

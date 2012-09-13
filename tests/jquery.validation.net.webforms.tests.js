@@ -77,6 +77,12 @@
         equal($("#uxUserName").next().text(), "Please enter a valid email address.");
     });
 
+    test("first invalid field has focus set when submitting", function () {
+        $("#uxLogin").click();
+        equal($("#uxUserName").next().text(), "This field is required.");
+        ok($("#uxUserName").is(":focus"), "The username should have focus set.");
+    });
+
     module("invalid signup form input");
 
     test("clicking submit with no firstname displays signup form validation error", function () {
