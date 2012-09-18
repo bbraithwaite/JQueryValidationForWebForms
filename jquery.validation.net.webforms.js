@@ -61,7 +61,7 @@
             group.find(':input').each(function (i, item) {
                 if (!$(item).valid()) {
 
-                    if ($("form").validate().settings.focusInvalid)
+                    if ($("form").validate().settings.focusInvalid && isValid)
                         $(item).focus();
 
                     isValid = false;
