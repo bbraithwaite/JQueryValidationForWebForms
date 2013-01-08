@@ -5,7 +5,7 @@
     <title>Multiple Form Validation Tests</title>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
-    <script type="text/javascript" src="../jquery.validation.net.webforms.js"></script>
+    <script type="text/javascript" src="../jquery.validation.net.webforms.min.js"></script>
     <link  type="text/css" rel="stylesheet" href="http://code.jquery.com/qunit/qunit-git.css" />
     <script type="text/javascript" src="http://code.jquery.com/qunit/qunit-git.js"></script>
     <script type="text/javascript" src="jquery.validation.net.webforms.tests.js"></script>

@@ -36,6 +36,7 @@
                     // Only execute validation if the key pressed was enter.
                     if (event.keyCode == 13) {
                         $(event.currentTarget).closest(".form").find(".submit").click();
+                        return false;
                     }
                 });
 

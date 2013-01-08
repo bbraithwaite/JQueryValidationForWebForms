@@ -4,7 +4,7 @@
     <title>Multiple Form Validation</title>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
-    <script type="text/javascript" src="jquery.validation.net.webforms.js"></script>
+    <script type="text/javascript" src="jquery.validation.net.webforms.min.js"></script>
     <script type="text/javascript">
         $(function() {
             $("#aspForm").validateWebForm();
