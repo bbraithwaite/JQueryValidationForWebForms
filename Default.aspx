@@ -4,7 +4,7 @@
     <title>Multiple Form Validation</title>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
-    <script type="text/javascript" src="jquery.validation.net.webforms.min.js"></script>
+    <script type="text/javascript" src="jquery.validation.net.webforms.js"></script>
     <script type="text/javascript">
         $(function() {
             $("#aspForm").validateWebForm();
@@ -37,6 +37,10 @@
             <p>
                 <asp:Label ID="uiUserName" runat="server" AssociatedControlID="uxUserName" Text="User name:"></asp:Label>
                 <asp:TextBox ID="uxUserName" runat="server" CssClass="required email"></asp:TextBox>
+            </p>
+            <p>
+                <asp:Label ID="Label1" runat="server" AssociatedControlID="uxPassword" Text="Password:"></asp:Label>
+                <asp:TextBox ID="uxPassword" runat="server" CssClass="required" TextMode="Password"></asp:TextBox>
             </p>
             <p>
                 <asp:Button ID="uxLogin" runat="server" Text="Login" CssClass="submit login" />

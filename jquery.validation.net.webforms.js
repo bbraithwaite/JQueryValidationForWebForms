@@ -32,7 +32,7 @@
 
                 // Select any input[type=text] elements within a validation group
                 // and attach keydown handlers to all of them.
-                $('.form :text').keydown(function (event) {
+                $('.form :input').keydown(function (event) {
                     // Only execute validation if the key pressed was enter.
                     if (event.keyCode == 13) {
                         $(event.currentTarget).closest(".form").find(".submit").click();
