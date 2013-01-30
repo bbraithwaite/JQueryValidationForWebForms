@@ -1,5 +1,5 @@
 ﻿/**
-* jquery.validation.net.webforms.js v1.0.0
+* jquery.validation.net.webforms.js v1.1.0
 * https://github.com/bbraithwaite/JQueryValidationForWebForms
 * ===================================================
 *
@@ -13,7 +13,6 @@
 (function ($) {
 
     $.extend($.fn, {
-        // http://docs.jquery.com/Plugins/Validation/validate
         validateWebForm: function (options) {
 
             var form = $(this[0]),
@@ -57,12 +56,13 @@
         validateAndSubmit: function (event) {
 
             var group = $(this).getValidationContainer(event.currentTarget),
-                isValid = true;
+                isValid = true,
+                settings = $("form").validate().settings;
 
             group.find(':input').each(function (i, item) {
                 if (!$(item).valid()) {
 
-                    if ($("form").validate().settings.focusInvalid && isValid)
+                    if (settings.focusInvalid && isValid)
                         $(item).focus();
 
                     isValid = false;
@@ -71,6 +71,11 @@
 
             if (!isValid) {
                 event.preventDefault();
+            } else {
+                if (settings.submitHandler) {
+                    settings.submitHandler();
+                    event.preventDefault();
+                }
             }
         }
     });

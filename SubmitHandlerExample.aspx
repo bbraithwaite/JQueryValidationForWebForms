@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+﻿<%@ Page Language="VB" AutoEventWireup="false" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
     <title>Multiple Form Validation</title>
@@ -6,8 +8,12 @@
     <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
     <script type="text/javascript" src="jquery.validation.net.webforms.min.js"></script>
     <script type="text/javascript">
-        $(function() {
-            $("#aspForm").validateWebForm();
+        $(function () {
+            $("#aspForm").validateWebForm({
+                submitHandler: function (form) {
+                    alert("Called Submit Handler");
+                }
+            });
         });
     </script>
     <style type="text/css">
