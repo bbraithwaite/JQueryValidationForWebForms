@@ -6,6 +6,13 @@ Enables "validation groups" using JQuery Validation plugin with ASP.Net WebForms
 
 For more information please see [blog post] (http://www.contentedcoder.com/2012/08/jquery-validation-groups-for-webforms.html).
 
+##What Problem Does it Solve?
+
+It stops this from happening where the entire form is validated:
+
+![two forms](http://lh4.ggpht.com/-2ytTdyP4XvM/UDj4AHfH2rI/AAAAAAAAAU0/c3GcBx_j7po/Screen%252520Shot%2525202012-08-25%252520at%25252016.25.38.png?imgmax=800 "Two Forms Example")
+
+
 **Get Started**
 
 Replace the validate bind the validate event from:
