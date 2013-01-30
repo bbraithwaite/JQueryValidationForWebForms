@@ -1,25 +1,39 @@
-A plug-in that takes the pain out of using JQuery validation with ASP.Net WebForms. Tackles the problem of being restricted to a single Form element when working with multiple validation groups.
+#JQuery Validation Groups for WebForms
 
-For more information please see: http://www.contentedcoder.com/2012/08/jquery-validation-groups-for-webforms.html
+A plug-in that takes the pain out of using JQuery validation with ASP.Net WebForms. 
 
-**EXAMPLE**
+Enables "validation groups" using JQuery Validation with ASP.Net WebForms.
 
-Use the following to bind the event:
+For more information please see [blog post] (http://www.contentedcoder.com/2012/08/jquery-validation-groups-for-webforms.html).
 
+**Get Started**
+
+Replace the validate bind the validate event from:
+ 
+```javascript
+$("#aspForm").validate();
+ ```
+
+To:
+
+ ```javascript
 $("#aspForm").validateWebForm();
+ ```
 
 To create a validation group, add the class "form" to the containing element. Add the class "submit" to the element that should validate upon submit. Now these will be validated seperately, even though they are within the same form:
 
+ ```xml
 <fieldset class="form" id="signup">
-
-....
-
+<asp:Textbox ID="uxUsername" runat="server" CssClass="required" />
 <asp:Button ID="uxRegister" runat="server" Text="Sign Up" CssClass="submit" />
-
 </fieldset>
+ ```
+
+That's it!
 
 **FULL EXAMPLE**
 
+ ```xml
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
@@ -60,3 +74,8 @@ To create a validation group, add the class "form" to the containing element. Ad
     </form>
 </body>
 </html>
+ ```
+
+ **Feedback**
+
+ This plug-in is being actively maintained. If you see an issue please flag it either vai the blog post or by raising an issue via Github.
