@@ -82,7 +82,3 @@ That's it!
 </body>
 </html>
  ```
-
- **Feedback**
-
- This plug-in is being actively maintained. If you see an issue please flag it either vai the blog post or by raising an issue via Github.
