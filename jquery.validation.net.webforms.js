@@ -29,10 +29,12 @@
                 // wire up the default jquery validation event to the form
                 this.validate(options);
 
-                // Select any input[type=text] elements within a validation group
+                // Select all input elements in form
                 // and attach keydown handlers to all of them.
                 $('.form :input').keydown(function (event) {
-                    // Only execute validation if the key pressed was enter.
+                    // Cause the form to validate when the enter key is pressed.
+                    // It is a requirement to catch the enter key press as the default
+                    // browser action would submit the form bypassing the validation event thus validating all groups.
                     if (event.keyCode == 13) {
                         $(event.currentTarget).closest(".form").find(".submit").click();
                         return false;
