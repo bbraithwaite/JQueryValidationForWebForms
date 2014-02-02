@@ -66,6 +66,9 @@
 
                     if (settings.focusInvalid && isValid)
                         $(item).focus();
+                        
+                    if (settings.invalidHandler)
+                      settings.invalidHandler(event, item);
 
                     isValid = false;
                 }
