@@ -4,7 +4,7 @@ A plug-in that takes the pain out of using JQuery validation with ASP.Net WebFor
 
 Enables "validation groups" using JQuery Validation plugin with ASP.Net WebForms.
 
-For more information please see [blog post] (http://www.contentedcoder.com/2012/08/jquery-validation-groups-for-webforms.html).
+For more information please see [blog post] (http://bradoncode.com/2012/08/jquery-validation-groups-for-webforms.html).
 
 ##What Problem Does it Solve?
 
